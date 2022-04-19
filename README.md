@@ -18,8 +18,8 @@ app.config['MYSQL_DATABASE_HOST'] = 'localhost'  <br />
 execute: app.py <br /> 
 
 # Commande
-Use Postman 
-Import Pyhton - API.postman_collection.json (File ==> Import...) <br /> 
+Use Postman  <br /> 
+Import Python - API.postman_collection.json (File ==> Import...) <br /> 
 
 # API resource routes
 api.add_resource(UserList, '/users', endpoint='users') <br /> 
