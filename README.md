@@ -3,31 +3,31 @@
 Execution order: 
 
 # My SQL 
-execute: 
-- 01-create-user.sql
-- 02-database-python-api-rest.sql
+execute:  <br /> 
+- 01-create-user.sql <br /> 
+- 02-database-python-api-rest.sql <br /> 
 
 Configuration:
 
-app.config['MYSQL_DATABASE_USER'] = 'pythonapirest'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'pythonapirest'
-app.config['MYSQL_DATABASE_DB'] = 'python-api-rest'
-app.config['MYSQL_DATABASE_HOST'] = 'localhost' 
+app.config['MYSQL_DATABASE_USER'] = 'pythonapirest'  <br /> 
+app.config['MYSQL_DATABASE_PASSWORD'] = 'pythonapirest' <br />  
+app.config['MYSQL_DATABASE_DB'] = 'python-api-rest' <br /> 
+app.config['MYSQL_DATABASE_HOST'] = 'localhost'  <br /> 
 
 # Python 
-execute: app.py
+execute: app.py <br /> 
 
 # Commande
 Use Postman 
-Import Pyhton - API.postman_collection.json (File ==> Import...)
+Import Pyhton - API.postman_collection.json (File ==> Import...) <br /> 
 
 # API resource routes
-api.add_resource(UserList, '/users', endpoint='users')
-api.add_resource(User, '/user/<int:user_id>', endpoint='user')
+api.add_resource(UserList, '/users', endpoint='users') <br /> 
+api.add_resource(User, '/user/<int:user_id>', endpoint='user') <br /> 
 
 
 # Informations
-IDE: Spyder
-Version: 3.9
-Library REST: Flask_RESTful. See ./env/Lib/site-packages/
+IDE: Spyder <br /> 
+Version: 3.9 <br /> 
+Library REST: Flask_RESTful. See ./env/Lib/site-packages/ <br /> 
 
